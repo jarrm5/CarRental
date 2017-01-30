@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Oct 4, 2014, 8:52:50 PM
-    Author     : MohammadA
-*/
+
 
 div.tabs{
     position:relative;
@@ -51,6 +43,7 @@ div.tab_detail:hover{
     cursor:auto;
 }
 
+/*, table.no_data_found*/
 div.tab_detail_hidden{
     display:none;
 }

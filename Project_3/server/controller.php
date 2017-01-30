@@ -3,7 +3,7 @@
 include "connection.php";
 include "utility.php";
 
-session_start(); //start the session
+//session_start(); //start the session
 $result = "";
 
 if (isset($_POST['type']) && is_session_active()) {
@@ -11,7 +11,7 @@ if (isset($_POST['type']) && is_session_active()) {
     $_SESSION["start"] = time(); //reset the session start time
     $request_type = sanitizeMYSQL($connection, $_POST['type']);
     
-    //$request_type = "return_car";
+    //$request_type = "show_returned_cars";
     //$_SESSION["username"] = "s.yusif";
     //$search = "nissan white";
     //$_POST['id'] = '4';

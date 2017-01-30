@@ -1,12 +1,13 @@
 $(document).ready(function(){
+    //clicking any tab
    $(".tab, .tab_pressed").on("click",function(){show_tab(this);});
 });
 
 function show_tab(tab){
-    $(".tab_pressed").attr("class","tab");
-    $(".tab_detail").attr("class","tab_detail_hidden");
-    $(tab).attr("class","tab_pressed");
-    $(tab).children(".tab_detail_hidden").attr("class","tab_detail");
+    $(".tab_pressed").attr("class","tab");                            //the pressed tab gets the un-pressed tab look
+    $(".tab_detail").attr("class","tab_detail_hidden");               //the tab details of the pressed tab are now hidden
+    $(tab).attr("class","tab_pressed");                               //the tab clicked gets the pressed tab look
+    $(tab).children(".tab_detail_hidden").attr("class","tab_detail"); //the details of the tab clicked are now visible
 };
 
 function htmlMaker(template) { //this class is used to generate dynamic HTML
